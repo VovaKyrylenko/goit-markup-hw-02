@@ -241,7 +241,7 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: auto;
 }
 .product-list {
@@ -299,12 +299,6 @@ body {
   background-color: var(--btn-cl-hover);
 }
 
-.portfolio,
-.feature {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 ul {
   padding: 0 0;
   margin: 0 0;
@@ -331,10 +325,6 @@ ul {
   font-weight: 400;
 }
 
-.portfolio-section .container {
-  margin: 94px auto;
-}
-
 .product-text {
   padding: 20px 24px;
   border-left: 1px solid var(--border-cl);
@@ -352,6 +342,10 @@ img {
 }
 
 .section {
-  padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.our-features,
+.portfolio {
+  padding-top: 94px;
 }
