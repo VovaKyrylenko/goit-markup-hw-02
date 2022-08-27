@@ -8,6 +8,8 @@
   --footer-mail-tel-cl: #ffffff99;
   --ourteam-bg-cl: #f5f4fa;
   --border-cl: #eee;
+  --items: 3;
+  --indent: 30px;
 }
 
 body {
@@ -112,10 +114,13 @@ body {
 
 .footer .logo {
   color: var(--btn-cl-hover);
+  display: block;
+  padding-bottom: 20px;
 }
 
 .header .logo {
-    margin-right: 0;
+  margin-right: 93px;
+  margin-left: 0;
 }
 
 .header .active {
@@ -146,6 +151,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--btn-cl-hover);
+  width: 696px;
+  margin: auto;
+  padding-bottom: 30px;
 }
 
 .hero {
@@ -204,17 +212,15 @@ body {
 .nav-elements {
   display: flex;
   gap: 50px;
-  margin: 0 auto;
+  margin-right: 344px;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .contacts-header {
-  margin: auto;
   display: flex;
   gap: 50px;
 }
@@ -240,16 +246,12 @@ body {
 }
 .product-list {
   display: flex;
-  width: 1170px;
   flex-wrap: wrap;
-  margin: 0 auto;
   gap: 30px;
-  padding: 0;
 }
 
 .product-list .product {
-  width: 370px;
-  border: 1px solid var(--border-cl);
+  flex-basis: 370px;
 }
 
 .header {
@@ -259,8 +261,7 @@ body {
 .portfolios-list {
   display: flex;
   gap: 30px;
-  width: 1170px;
-  margin: auto;
+  --items: 2;
 }
 
 .portfolio-element {
@@ -305,16 +306,19 @@ body {
 }
 
 ul {
-  padding: 0;
+  padding: 0 0;
+  margin: 0 0;
 }
 
-.hero {
+.hero.section {
   padding: 200px 0;
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .footer-list {
@@ -332,5 +336,22 @@ ul {
 }
 
 .product-text {
-    margin: 20px 24px;
+  padding: 20px 24px;
+  border-left: 1px solid var(--border-cl);
+  border-right: 1px solid var(--border-cl);
+  border-bottom: 1px solid var(--border-cl);
+  width: inherit;
+}
+
+img {
+  display: block;
+}
+
+.service {
+  flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) \var(--items));
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
